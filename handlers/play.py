@@ -90,7 +90,7 @@ async def playlist_(client: Client, message: types.Message):
                 f"📌 {gm(chat_id, 'yt_title')}:"
                 f" [{current['title']}](https://t.me/{bot_username}?start=ytinfo_{current['yt_id']})\n"
                 f"⏱ {gm(chat_id, 'duration')}: {current['duration']}\n"
-                f"🙌 {gm(chat_id, 'req_by')}: {mention_current_user}",
+                f"🤴 {gm(chat_id, 'req_by')}: {mention_current_user}",
                 disable_web_page_preview=True
             )
         if current and queued:
@@ -104,13 +104,13 @@ async def playlist_(client: Client, message: types.Message):
                 ques += f"📌 {gm(chat_id, 'yt_title')}:"
                 ques += f" [{title}](https://t.me/{bot_username}?start=ytinfo_{yt_id})\n"
                 ques += f"⏱ {gm(chat_id, 'duration')}: {duration}\n"
-                ques += f"🙌 {gm(chat_id, 'req_by')}: {mention_user}\n\n"
+                ques += f"🤴 {gm(chat_id, 'req_by')}: {mention_user}\n\n"
             return await reply(
                 f"{gm(chat_id, 'now_playing')}\n"
                 f"📌 {gm(chat_id, 'yt_title')}: "
                 f"[{current['title']}](https://t.me/{bot_username}?start=ytinfo_{current['yt_id']})\n"
                 f"⏱ {gm(chat_id, 'duration')}: {current['duration']}\n"
-                f"🙌 {gm(chat_id, 'req_by')}: {mention_current_user}\n\n\n"
+                f"🤴 {gm(chat_id, 'req_by')}: {mention_current_user}\n\n\n"
                 f"💬 {gm(chat_id, 'playlist')}\n{ques}",
                 disable_web_page_preview=True
             )
