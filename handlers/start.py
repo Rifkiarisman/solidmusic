@@ -37,19 +37,8 @@ async def start_(_, message: types.Message):
                                 f"{emoji.NOTEBOOK} commands",
                                 callback_data="help_commands"
                             )
-                        ],
-                        [
-                            button_keyboard(
-                                f"{emoji.LOUDSPEAKER} channel",
-                                url="https://t.me/solidprojects"
-                            )
-                        ],
-                        [
-                            button_keyboard(
-                                f"{emoji.FIRE} {gm(chat_id, 'maintainer')}",
-                                url="https://t.me/talktome_bbot"
-                            )
                         ]
+
                     ]
                 )
             )
